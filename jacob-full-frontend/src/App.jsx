@@ -32,7 +32,7 @@ function App() {
           <button type="submit">Submit</button>
         </form>
       </div>
-      <p>Data should be submitted to Express API, <br /> See the status in browser console.</p>
+      <p>Data should be submitted to Express API, <br /> See the status in your browser console.</p>
     </>
   )
 }
