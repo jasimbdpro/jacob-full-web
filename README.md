@@ -1,9 +1,9 @@
 # Jacob Full Web
 
-## It inclued both frond-end and back-end, the link of client-side react app and server-side express app are given below:
+## It inclued both frond-end and back-end (Fetch API within asynchronous function)
 
-- **Client App:** [Visit Client App](https://jacob-full-web.netlify.app/)
-- **Server App:** [Visit Server App](https://jacob-full-web.vercel.app/)
+- **Client React App:** [Visit Client App](https://jacob-full-web.netlify.app/)
+- **Server Express App:** [Visit Server App](https://jacob-full-web.vercel.app/)
 
 ## Description
 

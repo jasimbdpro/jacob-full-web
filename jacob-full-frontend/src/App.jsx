@@ -6,19 +6,23 @@ function App() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const response = await fetch('https://jacob-full-web.vercel.app/', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData),
-    })
-    if (!response.ok) {
-      throw new Error(`HTTP error! Stature: ${response.status}`)
+    try {
+      const response = await fetch('https://jacob-full-web.vercel.app/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData),
+      })
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`)
+      }
+      const result = await response.json();
+      console.log(result.message)
+      console.log(result.data)
+    } catch (error) {
+      console.error("Error: ", error)
     }
-    const result = await response.json();
-    console.log(result.message)
-    console.log(result.data)
   }
 
   return (
